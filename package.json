@@ -1,0 +1,9 @@
+{
+  "name": "node-data-example",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "WTFPL",
+  "dependencies": {
+    "tedious": "~0.2.3"
+  }
+}
