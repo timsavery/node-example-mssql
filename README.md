@@ -16,44 +16,74 @@ moderate load).
 
 ## Sample Results
 
-    $ siege -c 2 -r 10 http://localhost:8080/log
+    $ siege -c 5 -r 10 http://localhost:8080/log
     ** SIEGE 3.0.5
-    ** Preparing 2 concurrent users for battle.
+    ** Preparing 5 concurrent users for battle.
     The server is now under siege...
-    HTTP/1.1 200   2.70 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   4.44 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   1.88 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   1.92 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   2.48 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   2.48 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   4.38 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   8.07 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   7.06 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   1.57 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   2.29 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   6.77 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   2.20 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   3.19 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   7.06 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   2.40 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   2.65 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   4.01 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   1.66 secs:  271105 bytes ==> GET  /log
-    HTTP/1.1 200   2.88 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.08 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.34 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.17 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.23 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.23 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.37 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.59 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.73 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.38 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.35 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.44 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.40 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.43 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   2.27 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.46 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   1.70 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.43 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.80 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.41 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.43 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   2.32 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.99 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   1.93 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.81 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   2.42 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.94 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   2.80 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   1.39 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   1.07 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   2.22 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.45 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   8.60 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   1.01 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.65 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.89 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.99 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   1.16 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.98 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   1.12 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   3.49 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   1.59 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.44 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.46 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.39 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   2.58 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.73 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   8.02 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.37 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.46 secs:  271105 bytes ==> GET  /log
+    HTTP/1.1 200   0.81 secs:  271105 bytes ==> GET  /log
     done.
 
-    Transactions:		          20 hits
-    Availability:		          100.00 %
-    Elapsed time:		          47.94 secs
-    Data transferred:	          5.17 MB
-    Response time:		         3.60 secs
-    Transaction rate:	          0.42 trans/sec
-    Throughput:		            0.11 MB/sec
-    Concurrency:		           1.50
-    Successful transactions:       20
-    Failed transactions:	       0
-    Longest transaction:	       8.07
-    Shortest transaction:          1.57
+    Transactions:		          50 hits
+    Availability:		      100.00 %
+    Elapsed time:		       22.73 secs
+    Data transferred:	       12.93 MB
+    Response time:		        1.27 secs
+    Transaction rate:	        2.20 trans/sec
+    Throughput:		        0.57 MB/sec
+    Concurrency:		        2.79
+    Successful transactions:          50
+    Failed transactions:	           0
+    Longest transaction:	        8.60
+    Shortest transaction:	        0.08
 
 #### Test Notes
 * Node Server running on Macbook Air
