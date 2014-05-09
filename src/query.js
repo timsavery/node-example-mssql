@@ -46,15 +46,15 @@ Query.prototype._read = function () {
     });
 
     request.on('row', function(columns) {
-      // var row = {};
-      //
-      // columns.forEach(function(column) {
-      //   if (column.value !== null) {
-      //     row[column.metadata.colName] = column.value;
-      //   }
-      // });
-      //
-      // self.push(JSON.stringify(row));
+      var row = {};
+
+      columns.forEach(function(column) {
+        if (column.value !== null) {
+          row[column.metadata.colName] = column.value;
+        }
+      });
+
+      self.push(JSON.stringify(row));
     });
 
     connection.execSql(request);
